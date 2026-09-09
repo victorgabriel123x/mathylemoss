@@ -1,0 +1,149 @@
+/* ============================================================
+   MATHY LEMOSS — TOKENS
+   Fonte: painel de Design System (Arco-íris editorial)
+   ============================================================ */
+
+:root{
+  /* ---------- BASE ---------- */
+  --preto-ameixa:#1A0E1B;
+  --ameixa-900:#120A13;
+  --vinho:#5B0E2D;
+  --vinho-800:#420A21;
+  --creme:#F7EFE6;
+  --creme-200:#EFE3D6;
+
+  /* ---------- ESPECTRO ---------- */
+  --rosa:#FF6FAE;
+  --coral:#FF7A59;
+  --laranja:#FF9A3C;
+  --amarelo:#FFC73D;
+  --verde:#33C07A;
+  --turquesa:#2EC4C7;
+  --azul:#3B82F6;
+  --lilas:#B38DFF;
+  --roxo:#7A4DFF;
+
+  /* ---------- DETALHE ---------- */
+  --dourado:#C8A56A;
+  --dourado-claro:#E3C894;
+
+  /* ---------- CAPÍTULO (sobrescrito por seção) ---------- */
+  --ch-bg:var(--preto-ameixa);
+  --ch-fg:var(--creme);
+  --ch-fg-soft:rgba(247,239,230,.72);
+  --ch-fg-mute:rgba(247,239,230,.45);
+  --ch-accent:var(--rosa);
+  --ch-accent-2:var(--laranja);
+  --ch-line:rgba(247,239,230,.14);
+
+  /* ---------- TIPOGRAFIA ---------- */
+  --display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --ui:"Manrope","Segoe UI",system-ui,-apple-system,sans-serif;
+  --emo:"Cormorant Garamond",Georgia,serif;
+
+  --fs-micro:clamp(.68rem,.64rem + .14vw,.78rem);
+  --fs-small:clamp(.82rem,.78rem + .18vw,.94rem);
+  --fs-body:clamp(1rem,.96rem + .22vw,1.14rem);
+  --fs-lead:clamp(1.2rem,1.02rem + .82vw,1.7rem);
+  --fs-sub:clamp(1.3rem,1rem + 1.5vw,2.4rem);
+  --fs-h2:clamp(2.2rem,1.2rem + 4.4vw,6rem);
+  --fs-mono:clamp(2.6rem,1.2rem + 6.4vw,8rem);   /* frase-monumento */
+  --fs-hero:clamp(4.2rem,14.5vw,15rem);
+
+  --tr-wide:.22em;
+  --tr-mid:.14em;
+
+  /* ---------- ESPAÇO ---------- */
+  --gutter:clamp(1.25rem,5vw,5rem);
+  --maxw:1560px;
+  --sec-y:clamp(5.5rem,12vw,11rem);
+
+  /* ---------- MOVIMENTO ---------- */
+  --e-out:cubic-bezier(.16,1,.3,1);
+  --e-soft:cubic-bezier(.4,0,.2,1);
+  --t-fast:180ms;
+  --t-med:380ms;
+  --t-slow:820ms;
+
+  --radius-pill:999px;
+  --radius-soft:18px;
+}
+
+/* ------------------------------------------------------------
+   CAPÍTULOS CROMÁTICOS
+   Cada seção declara seu clima. 60/30/10.
+   ------------------------------------------------------------ */
+
+.ch-escuro{
+  --ch-bg:var(--preto-ameixa);
+  --ch-fg:var(--creme);
+  --ch-fg-soft:rgba(247,239,230,.72);
+  --ch-fg-mute:rgba(247,239,230,.45);
+  --ch-line:rgba(247,239,230,.14);
+}
+.ch-vinho{
+  --ch-bg:var(--vinho-800);
+  --ch-fg:var(--creme);
+  --ch-fg-soft:rgba(247,239,230,.74);
+  --ch-fg-mute:rgba(247,239,230,.48);
+  --ch-accent:var(--laranja);
+  --ch-accent-2:var(--amarelo);
+  --ch-line:rgba(255,154,60,.22);
+}
+.ch-creme{
+  --ch-bg:var(--creme);
+  --ch-fg:#2A0C18;
+  --ch-fg-soft:rgba(42,12,24,.72);
+  --ch-fg-mute:rgba(42,12,24,.5);
+  --ch-accent:var(--vinho);
+  --ch-accent-2:var(--rosa);
+  --ch-line:rgba(42,12,24,.14);
+}
+.ch-lilas{
+  --ch-bg:var(--ameixa-900);
+  --ch-fg:var(--creme);
+  --ch-fg-soft:rgba(247,239,230,.74);
+  --ch-fg-mute:rgba(247,239,230,.46);
+  --ch-accent:var(--lilas);
+  --ch-accent-2:var(--azul);
+  --ch-line:rgba(179,141,255,.24);
+}
+.ch-verde{
+  --ch-bg:#0C1A14;
+  --ch-fg:var(--creme);
+  --ch-fg-soft:rgba(247,239,230,.74);
+  --ch-fg-mute:rgba(247,239,230,.46);
+  --ch-accent:var(--turquesa);
+  --ch-accent-2:var(--verde);
+  --ch-line:rgba(46,196,199,.24);
+}
+.ch-cinema{
+  --ch-bg:#0A0710;
+  --ch-fg:var(--creme);
+  --ch-fg-soft:rgba(247,239,230,.7);
+  --ch-fg-mute:rgba(247,239,230,.42);
+  --ch-accent:var(--azul);
+  --ch-accent-2:#E0374B;
+  --ch-line:rgba(59,130,246,.24);
+}
+/* papel frio — o capítulo comercial.
+   Muda o registro: o resto do site é quente e emocional, aqui é
+   papel de mídia kit. Mesmo vinho na tipografia, azul no sistema. */
+.ch-papel{
+  --ch-bg:#E7EDF4;
+  --ch-fg:#1E0A16;
+  --ch-fg-soft:rgba(30,10,22,.74);
+  --ch-fg-mute:rgba(30,10,22,.52);
+  --ch-accent:#1F5FC4;
+  --ch-accent-2:var(--coral);
+  --ch-line:rgba(30,10,22,.16);
+}
+.ch-roxo{
+  --ch-bg:#160A22;
+  --ch-fg:var(--creme);
+  --ch-fg-soft:rgba(247,239,230,.74);
+  --ch-fg-mute:rgba(247,239,230,.46);
+  --ch-accent:var(--lilas);
+  --ch-accent-2:var(--dourado);
+  --ch-line:rgba(200,165,106,.28);
+}

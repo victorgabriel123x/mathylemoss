@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mathy Lemoss | Influenciadora Digital, Atriz e Humorista</title>
+<meta name="description" content="Mathy Lemoss é influenciadora digital, atriz e humorista. Mulher trans maranhense, de Dom Pedro para o Brasil. Publicidade, campanhas, eventos e tarô terapêutico.">
+<meta name="author" content="Mathy Lemoss">
+<meta name="theme-color" content="#120A13">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mathy Lemoss">
+<meta property="og:title" content="Mathy Lemoss | Influenciadora Digital, Atriz e Humorista">
+<meta property="og:description" content="Entre quem eu fui e quem ainda estou me tornando, existe uma vida inteira.">
+<meta property="og:image" content="public/mathy/retrato-rosa.webp">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mathy Lemoss | Influenciadora Digital, Atriz e Humorista">
+<meta name="twitter:description" content="Entre quem eu fui e quem ainda estou me tornando, existe uma vida inteira.">
+<meta name="twitter:image" content="public/mathy/retrato-rosa.webp">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23120A13'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23FF6FAE' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+<link rel="preload" as="image" href="public/mathy/hero-recorte.webp" fetchpriority="high">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sections.css">
+
+<script>
+/* Decidido antes da primeira pintura. A hero só é escondida para animar
+   quando dá para garantir que ela vai reaparecer: com JS, sem
+   prefers-reduced-motion e fora de um iframe (onde o scroll do pai
+   não chega até aqui). Em qualquer outro caso, nasce visível. */
+(function () {
+  var r = document.documentElement;
+  r.classList.add('js');
+  var calmo = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var emIframe = true;
+  try { emIframe = window.self !== window.top; } catch (e) {}
+  if (!calmo && !emIframe) {
+    r.classList.add('hero-entrando');
+    setTimeout(function () { r.classList.add('hero-pronta'); }, 60);
+    setTimeout(function () { r.classList.add('hero-pronta'); }, 1500);
+  }
+})();
+</script>
+</head>
+
+<body>
+
+<a class="pular-para" href="#conteudo-principal">Pular para o conteúdo</a>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="topo" id="topo">
+  <a class="marca" href="#inicio" aria-label="Mathy Lemoss, início">
+    <span class="marca__nome">MATHY LEMOSS</span>
+    <span class="marca__papel">Influenciadora digital</span>
+  </a>
+
+  <nav class="topo__nav" aria-label="Navegação principal">
+    <a href="#manifesto">Manifesto</a>
+    <a href="#mathy">Mathy</a>
+    <a href="#trajetoria">Trajetória</a>
+    <a href="#conteudos">Conteúdos</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#taro">Tarô</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="topo__dir">
+    <ul class="social" aria-label="Redes sociais">
+      <li><a href="#" data-link="instagram" target="_blank" rel="noopener" aria-label="Instagram de Mathy Lemoss">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a></li>
+      <li><a href="#" data-link="tiktok" target="_blank" rel="noopener" aria-label="TikTok de Mathy Lemoss">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.2a3.6 3.6 0 1 1-3-3.55"/><path d="M14 3c.4 2.4 2 4 4.4 4.2"/></svg>
+      </a></li>
+    </ul>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================================================
+     MENU OVERLAY
+     ============================================================ -->
+<div class="menu" id="menu" data-aberto="false" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+  <nav class="menu__lista" aria-label="Navegação">
+    <a href="#inicio"><span>01</span>Início</a>
+    <a href="#manifesto"><span>02</span>Manifesto</a>
+    <a href="#mathy"><span>03</span>Mathy</a>
+    <a href="#trajetoria"><span>04</span>Trajetória</a>
+    <a href="#conteudos"><span>05</span>Conteúdos</a>
+    <a href="#trabalhos"><span>06</span>Trabalhos</a>
+    <a href="#taro"><span>07</span>Tarô</a>
+    <a href="#contato"><span>08</span>Contato</a>
+  </nav>
+  <div class="menu__rodape">
+    <p data-texto="arroba">@mathylemoss</p>
+    <p data-texto="cidade">Dom Pedro, Maranhão · Brasil</p>
+  </div>
+</div>
+
+<main id="conteudo-principal">
+
+<!-- ============================================================
+     01 · HERO
+     ============================================================ -->
+<section class="hero ch-escuro" id="inicio">
+
+  <div class="hero__atmosfera" aria-hidden="true"></div>
+  <div class="hero__veu" aria-hidden="true"></div>
+
+  <img class="botanica hero__bot hero__bot--esq" src="public/graphics/horiz-esq-rosa.webp"
+       alt="" aria-hidden="true" width="1400" height="467" data-parallax="26">
+  <img class="botanica hero__bot hero__bot--dir" src="public/graphics/vert-dir-laranja.webp"
+       alt="" aria-hidden="true" width="600" height="1800" data-parallax="-18">
+
+  <div class="grao" aria-hidden="true"></div>
+
+  <div class="hero__palco">
+    <figure class="hero__figura">
+      <img src="public/mathy/hero-recorte.webp"
+           alt="Mathy Lemoss, de vestido preto, olhando para a câmera"
+           width="923" height="1672" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+
+  <div class="hero__grade wrap">
+    <p class="hero__olho">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>
+      Bem-vinda ao meu mundo
+    </p>
+
+    <h1 class="hero__nome">
+      <span class="hero__linha"><i class="hero__nome-1">Mathy</i></span>
+      <span class="hero__linha"><i class="hero__nome-2">Lemoss</i></span>
+    </h1>
+
+    <p class="hero__frase">
+      Entre quem eu fui<br>e quem ainda estou me tornando,<br>existe <em>uma vida inteira</em>
+    </p>
+
+    <div class="btns hero__btns">
+      <a class="btn btn--primario" href="#mathy">
+        <svg class="faisca" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>
+        Entrar no meu mundo
+        <svg class="seta" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--secundario" href="#contato">
+        Publicidade &amp; contato
+        <svg class="seta" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <ul class="hero__selos" aria-label="Participações">
+      <li><strong>2020</strong> Campanha nacional TikTok</li>
+      <li><strong>2021</strong> Indicada · TikTok Awards</li>
+      <li><strong>2022</strong> LOL · Prime Video</li>
+      <li><strong>2023</strong> Tire 5 Cartas · Cinema</li>
+    </ul>
+  </div>
+
+  <div class="hero__base wrap">
+    <ul class="hero__papeis">
+      <li>Influenciadora digital</li>
+      <li>Atriz</li>
+      <li>Humorista</li>
+      <li>Espiritualidade</li>
+    </ul>
+
+    <a class="hero__seguir" href="#manifesto">
+      Continue
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v13M6 13l6 6 6-6"/></svg>
+    </a>
+
+    <p class="hero__local" data-texto="cidade">Dom Pedro, Maranhão · Brasil</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     02 · MANIFESTO
+     ============================================================ -->
+<section class="secao ch-creme manifesto" id="manifesto">
+  <img class="botanica man__bot" src="public/graphics/horiz-dir-rosa.webp"
+       alt="" aria-hidden="true" loading="lazy" width="1400" height="479" data-parallax="-14">
+
+  <div class="wrap">
+    <p class="rotulo rev">Manifesto</p>
+
+    <h2 class="monumento man__frase rev" data-atraso=".08">
+      <span>Em busca de ser,</span>
+      <span>antes de qualquer coisa,</span>
+      <span><em class="emo">humana</em></span>
+    </h2>
+
+    <div class="man__texto">
+      <p class="corpo rev" data-atraso=".16">Eu já procurei sucesso, números, lugares e respostas. Hoje procuro sentido. Procuro o meu lugar sem precisar ser maior nem menor que ninguém. Um lugar onde eu possa existir inteira.</p>
+      <p class="corpo rev" data-atraso=".24">Talvez esse espaço seja sobre mim. Mas quero que, em algum momento, ele também faça você pensar sobre você.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     03 · PRAZER, MATHY
+     ============================================================ -->
+<section class="secao ch-lilas sobre" id="mathy">
+  <div class="wrap sobre__grade">
+
+    <figure class="sobre__foto rev">
+      <img src="public/mathy/sobre.webp" alt="Mathy Lemoss sorrindo, apoiada em uma mesa"
+           loading="lazy" width="1050" height="1400">
+    </figure>
+
+    <div class="sobre__texto">
+      <p class="rotulo rev">Prazer, Mathy</p>
+      <h2 class="titulo rev" data-atraso=".06">Uma mulher trans que fez da própria história <em class="emo">uma forma de conexão</em></h2>
+
+      <p class="corpo rev" data-atraso=".12">Mathy Lemoss é uma mulher trans maranhense, natural de Dom Pedro, no interior do Maranhão. Influenciadora digital, atriz e humorista, constrói sua trajetória na internet há mais de uma década.</p>
+      <p class="corpo rev" data-atraso=".16">Começou quando a câmera ainda significava experimentar. Veio o YouTube, veio o Instagram e, na pandemia, veio o TikTok. As dublagens, as interpretações, as caras e bocas e o humor espontâneo levaram Mathy a uma audiência nacional.</p>
+      <p class="corpo rev" data-atraso=".2">Mas número nenhum conta uma pessoa inteira. Por trás da criadora existe uma mulher apaixonada por beleza, maquiagem, espiritualidade, histórias, transformação e pelas pequenas coisas que fazem a vida parecer mais viva.</p>
+
+      <div class="btns rev" data-atraso=".26">
+        <a class="btn btn--terciario" href="#trajetoria">
+          Ver a trajetória
+          <svg class="seta" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <figure class="sobre__foto2 rev" data-atraso=".18">
+      <img src="public/momentos/sorriso.webp" alt="Mathy Lemoss em selfie, sorrindo"
+           loading="lazy" width="838" height="1280">
+    </figure>
+  </div>
+</section>
+
+<!-- ============================================================
+     04 · TRAJETÓRIA
+     ============================================================ -->
+<section class="secao ch-vinho traj" id="trajetoria">
+  <img class="botanica traj__bot" src="public/graphics/horiz-esq-laranja.webp"
+       alt="" aria-hidden="true" loading="lazy" width="1400" height="467" data-parallax="18">
+
+  <div class="wrap">
+    <header class="traj__topo">
+      <p class="rotulo rev">Trajetória</p>
+      <h2 class="titulo rev" data-atraso=".06">Do Maranhão <em class="emo">para o Brasil</em></h2>
+    </header>
+
+    <ol class="traj__lista">
+      <li class="traj__item rev">
+        <span class="traj__ano">2014</span>
+        <div>
+          <h3 class="traj__nome">A internet vira palco</h3>
+          <p class="traj__desc">Apresentação do Programa Xibel e os primeiros conteúdos digitais.</p>
+        </div>
+      </li>
+      <li class="traj__item rev" data-atraso=".06">
+        <span class="traj__ano">2020</span>
+        <div>
+          <h3 class="traj__nome">O Brasil conhece Mathy</h3>
+          <p class="traj__desc">Na pandemia, as dublagens e os vídeos de humor começam a viralizar no TikTok.</p>
+        </div>
+      </li>
+      <li class="traj__item rev" data-atraso=".12">
+        <span class="traj__ano">2020</span>
+        <div>
+          <h3 class="traj__nome">Começa no TikTok</h3>
+          <p class="traj__desc">Uma das criadoras escolhidas para estrelar a primeira campanha nacional do TikTok no Brasil.</p>
+        </div>
+      </li>
+      <li class="traj__item rev" data-atraso=".18">
+        <span class="traj__ano">2021</span>
+        <div>
+          <h3 class="traj__nome">TikTok Awards</h3>
+          <p class="traj__desc">Indicada na categoria “Entregou tudo na For You”.</p>
+        </div>
+      </li>
+      <li class="traj__item rev" data-atraso=".24">
+        <span class="traj__ano">2022</span>
+        <div>
+          <h3 class="traj__nome">Prime Video</h3>
+          <p class="traj__desc">Integra o elenco da segunda temporada de <em>LOL: Se Rir, Já Era!</em></p>
+        </div>
+      </li>
+      <li class="traj__item rev" data-atraso=".3">
+        <span class="traj__ano">2023</span>
+        <div>
+          <h3 class="traj__nome">Cinema</h3>
+          <p class="traj__desc">Integra o elenco de <em>Tire 5 Cartas</em>, com Lília Cabral, Stepan Nercessian, Alcione e Thaynara OG.</p>
+        </div>
+      </li>
+      <li class="traj__item traj__item--agora rev" data-atraso=".36">
+        <span class="traj__ano">Agora</span>
+        <div>
+          <h3 class="traj__nome">Uma nova Mathy Lemoss</h3>
+          <p class="traj__desc">Influenciadora, atriz, humorista, espiritualidade, beleza e histórias reais.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================================================
+     05 · EU NÃO SOU UM NICHO
+     ============================================================ -->
+<section class="secao ch-creme nicho" id="conteudos">
+  <div class="wrap">
+    <header class="nicho__topo">
+      <p class="rotulo rev">Conteúdos</p>
+      <h2 class="monumento nicho__titulo rev" data-atraso=".06">Eu não sou<br>um nicho</h2>
+      <p class="lead rev" data-atraso=".12">Sou todas as coisas que vivi até aqui</p>
+    </header>
+
+    <div class="nicho__pills" role="tablist" aria-label="Categorias de conteúdo" id="nichoPills"></div>
+    <div class="nicho__palco" id="nichoPalco"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     06 · SEM PERSONAGEM
+     ============================================================ -->
+<section class="secao ch-verde momentos" id="momentos">
+  <img class="botanica mom__bot" src="public/graphics/horiz-dir-turquesa.webp"
+       alt="" aria-hidden="true" loading="lazy" width="1400" height="479" data-parallax="-16">
+
+  <div class="wrap">
+    <header class="mom__topo">
+      <p class="rotulo rev">Sem personagem</p>
+      <h2 class="titulo rev" data-atraso=".06">A vida que acontece quando <em class="emo">ninguém diz “gravando”</em></h2>
+      <p class="corpo rev" data-atraso=".12">Academia. Caminhada. Um café. Uma maquiagem feita sem pressa. Uma conversa. Um dia bom. Um dia nem tanto. Existe muita Mathy entre uma publicação e outra.</p>
+    </header>
+
+    <div class="mom__galeria">
+      <figure class="mom__f mom__f--alta rev">
+        <img src="public/momentos/piquenique.webp" alt="Mathy Lemoss sentada em uma canga vermelha, ao ar livre" loading="lazy" width="960" height="1280">
+      </figure>
+      <figure class="mom__f rev" data-atraso=".06">
+        <img src="public/momentos/academia.webp" alt="Mathy Lemoss na academia, em roupa de treino" loading="lazy" width="960" height="1280">
+      </figure>
+      <figure class="mom__f rev" data-atraso=".12">
+        <img src="public/momentos/casa.webp" alt="Mathy Lemoss em casa, segurando um copo" loading="lazy" width="720" height="1280">
+      </figure>
+      <figure class="mom__f mom__f--larga rev" data-atraso=".18">
+        <img src="public/momentos/descanso.webp" alt="Mathy Lemoss sentada, de roupa branca, diante de uma parede vermelha" loading="lazy" width="960" height="1280">
+      </figure>
+      <figure class="mom__f rev" data-atraso=".24">
+        <img src="public/momentos/flores.webp" alt="Mathy Lemoss segurando um vaso de flores" loading="lazy" width="960" height="1280">
+      </figure>
+      <figure class="mom__f mom__f--alta rev" data-atraso=".3">
+        <img src="public/momentos/risada-noite.webp" alt="Mathy Lemoss rindo, sentada na rua à noite" loading="lazy" width="960" height="1280">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     07 · TRANSFORMAÇÃO
+     ============================================================ -->
+<section class="secao ch-creme transf" id="transformacao">
+  <div class="wrap">
+    <header class="transf__topo">
+      <p class="rotulo rev">Transformação</p>
+      <h2 class="monumento transf__titulo rev" data-atraso=".06">O corpo mudou<br><em class="emo">Mas não foi só o corpo</em></h2>
+    </header>
+
+    <div class="transf__grade">
+      <div class="transf__par">
+        <figure class="transf__f rev">
+          <img src="public/transformacao/antes-01.webp" alt="Mathy Lemoss antes do processo de emagrecimento" loading="lazy" width="960" height="1280">
+          <figcaption>Antes</figcaption>
+        </figure>
+        <span class="transf__seta" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+        </span>
+        <figure class="transf__f rev" data-atraso=".1">
+          <img src="public/transformacao/depois-01.webp" alt="Mathy Lemoss depois do processo de emagrecimento" loading="lazy" width="960" height="1280">
+          <figcaption>Depois</figcaption>
+        </figure>
+      </div>
+
+      <div class="transf__texto">
+        <p class="corpo rev" data-atraso=".14">O processo de emagrecimento marcou uma das maiores transformações da vida da Mathy. Existe uma Mathy antes e uma depois dessa experiência, mas a diferença não cabe numa balança.</p>
+        <p class="corpo rev" data-atraso=".18">No caminho vieram confiança, coragem, novos limites e uma maneira diferente de enxergar a própria capacidade de mudar.</p>
+
+        <blockquote class="transf__aspas rev" data-atraso=".22">
+          Quando eu comecei a acreditar que podia mudar uma coisa, comecei a perceber quantas outras também poderiam mudar.
+        </blockquote>
+
+        <div class="btns rev" data-atraso=".26">
+          <a class="btn btn--primario" data-link="videoTransformacao" href="#" target="_blank" rel="noopener">
+            <svg class="faisca" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Assistir à história completa
+            <svg class="seta" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     08 · TAMBÉM ATRIZ
+     ============================================================ -->
+<section class="secao ch-cinema atriz" id="trabalhos">
+  <div class="wrap">
+    <header class="atriz__topo">
+      <p class="rotulo rev">Audiovisual</p>
+      <h2 class="titulo rev" data-atraso=".06">Também atriz<br>Da tela do celular <em class="emo">para outras telas</em></h2>
+    </header>
+
+    <div class="atriz__grade">
+      <article class="obra rev">
+        <p class="obra__meta"><span>Prime Video</span><span>2022</span></p>
+        <h3 class="obra__nome">LOL: Se Rir, Já Era!</h3>
+        <p class="obra__papel">Participante · Segunda temporada</p>
+        <p class="obra__desc">Dez comediantes trancados numa casa, proibidos de rir. Mathy no elenco ao lado de nomes da comédia brasileira.</p>
+      </article>
+
+      <article class="obra rev" data-atraso=".1">
+        <p class="obra__meta"><span>Cinema</span><span>2023</span></p>
+        <h3 class="obra__nome">Tire 5 Cartas</h3>
+        <p class="obra__papel">Atriz</p>
+        <p class="obra__desc">Longa rodado inteiramente em São Luís, com Lília Cabral, Stepan Nercessian, Alcione e Thaynara OG.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     09 · MATHY + MARCAS
+     ============================================================ -->
+<section class="secao ch-papel publi" id="publicidade">
+  <div class="publi__pauta" aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="publi__topo">
+      <p class="rotulo rev">Mathy + marcas</p>
+      <h2 class="monumento publi__titulo rev" data-atraso=".06">Publicidade não precisa<br><em class="emo">parecer publicidade</em></h2>
+    </header>
+
+    <div class="publi__grade">
+      <div class="publi__texto">
+        <p class="corpo rev" data-atraso=".12">Quando a Mathy fala de uma marca, ela não abandona a própria linguagem para vestir um personagem. A marca entra no mundo dela.</p>
+        <p class="corpo rev" data-atraso=".16">É conversa, humor, experiência, opinião, estética e verdade. Porque uma audiência até esquece um anúncio. Mas dificilmente esquece algo que a fez sentir alguma coisa.</p>
+        <blockquote class="publi__aspas rev" data-atraso=".2">
+          Minha força não está em parecer perfeita para uma marca. Está em continuar parecendo comigo.
+        </blockquote>
+      </div>
+
+      <ul class="publi__servicos">
+        <li class="rev"><h3>Campanhas</h3><p>Conceito, roteiro e execução na linguagem que já funciona no perfil dela.</p></li>
+        <li class="rev" data-atraso=".05"><h3>Conteúdo patrocinado</h3><p>Vídeo para TikTok e Reels, Stories e conteúdo estático.</p></li>
+        <li class="rev" data-atraso=".1"><h3>UGC</h3><p>Material bruto e editado para a marca usar nos próprios canais e em mídia paga.</p></li>
+        <li class="rev" data-atraso=".15"><h3>Eventos</h3><p>Presença, cobertura em tempo real e conteúdo depois que acaba.</p></li>
+        <li class="rev" data-atraso=".2"><h3>Beleza e moda</h3><p>Lançamentos, prova de produto e ações de imagem.</p></li>
+        <li class="rev" data-atraso=".25"><h3>Projetos especiais</h3><p>Formatos autorais, séries de conteúdo e embaixadas de marca.</p></li>
+      </ul>
+    </div>
+
+    <div class="publi__faq">
+      <h3 class="publi__faq-titulo rev">Como funciona, sem mistério</h3>
+
+      <div class="faq">
+        <details class="faq__item rev">
+          <summary>Como começa uma parceria<span class="faq__sinal" aria-hidden="true"></span></summary>
+          <div class="faq__corpo"><p>Chega uma mensagem com o briefing: marca, objetivo, formato e prazo. A partir daí a Mathy responde com o que faz sentido para o perfil dela e o que entrega melhor resultado.</p></div>
+        </details>
+
+        <details class="faq__item rev" data-atraso=".04">
+          <summary>Quais formatos ela entrega<span class="faq__sinal" aria-hidden="true"></span></summary>
+          <div class="faq__corpo"><p>Vídeo para TikTok e Reels, Stories, conteúdo estático, UGC para a marca usar nos próprios canais e presença em evento. Combinações também são possíveis.</p></div>
+        </details>
+
+        <details class="faq__item rev" data-atraso=".08">
+          <summary>Ela aceita roteiro fechado<span class="faq__sinal" aria-hidden="true"></span></summary>
+          <div class="faq__corpo"><p>Aceita direção e mensagens obrigatórias. Mas o texto passa pela voz dela. É isso que faz a peça performar em vez de parecer comercial.</p></div>
+        </details>
+
+        <details class="faq__item rev" data-atraso=".12">
+          <summary>Em quais canais ela publica<span class="faq__sinal" aria-hidden="true"></span></summary>
+          <div class="faq__corpo"><p>Instagram e TikTok, no <strong>@mathylemoss</strong>. O material de UGC é entregue separado, para a marca usar onde quiser, inclusive em mídia paga.</p></div>
+        </details>
+
+        <details class="faq__item rev" data-atraso=".16">
+          <summary>Como recebo o mídia kit<span class="faq__sinal" aria-hidden="true"></span></summary>
+          <div class="faq__corpo"><p>É enviado no primeiro contato pelo WhatsApp, com os dados atualizados de alcance, perfil de audiência e cases recentes.</p></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="btns publi__cta rev" data-atraso=".3">
+      <a class="btn btn--primario" data-link="waPublicidade" href="#" target="_blank" rel="noopener">
+        <svg class="faisca" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>
+        Falar sobre parceria
+        <svg class="seta" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--terciario" href="#trabalhos">
+        Ver os trabalhos
+        <svg class="seta" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     10 · MARCAS
+     ============================================================ -->
+<section class="secao ch-creme marcas" aria-labelledby="marcas-titulo">
+  <div class="wrap marcas__topo">
+    <p class="rotulo rev">Parcerias</p>
+    <h2 class="sub rev" id="marcas-titulo" data-atraso=".06">Algumas histórias que já passaram por aqui</h2>
+  </div>
+  <div class="faixa marcas__faixa" id="marcasFaixa" aria-hidden="true"></div>
+  <p class="wrap marcas__nota rev" data-atraso=".12">Marcas e projetos com os quais a Mathy já trabalhou. Materiais e cases sob consulta.</p>
+</section>
+
+<!-- ============================================================
+     11 · ESPIRITUALIDADE / TARÔ
+     ============================================================ -->
+<section class="secao ch-roxo taro" id="taro">
+  <div class="taro__ceu" aria-hidden="true"></div>
+  <div class="taro__estrelas" id="taroEstrelas" aria-hidden="true"></div>
+  <span class="taro__anel taro__anel--a" aria-hidden="true"></span>
+  <span class="taro__anel taro__anel--b" aria-hidden="true"></span>
+  <img class="botanica taro__bot" src="public/graphics/vert-esq-roxo.webp"
+       alt="" aria-hidden="true" loading="lazy" width="600" height="1800" data-parallax="12">
+
+  <div class="wrap taro__grade">
+    <div class="taro__texto">
+      <p class="rotulo rev">Espiritualidade</p>
+      <h2 class="titulo rev" data-atraso=".06">Às vezes a resposta não está nas cartas. Está no que elas <em class="emo">fazem você enxergar</em></h2>
+
+      <p class="corpo rev" data-atraso=".12">A Mathy encontrou no tarô terapêutico uma extensão da maneira como se conecta com as pessoas. O atendimento é um espaço de conversa, escuta e reflexão para quem sente que precisa olhar uma situação por outro ângulo.</p>
+
+      <ul class="taro__itens rev" data-atraso=".16">
+        <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="4" width="10" height="15" rx="2"/><path d="M6.4 6.6 4.7 7.2a1.6 1.6 0 0 0-1 2l3.1 8.9"/><path d="m14 8.6 1.4 2.4-1.4 2.4-1.4-2.4z"/></svg>Tarô terapêutico</li>
+        <li>Atendimento individual</li>
+        <li>Online</li>
+        <li>Com acolhimento e sem julgamento</li>
+      </ul>
+
+      <div class="btns rev" data-atraso=".2">
+        <a class="btn btn--primario btn--taro" data-link="waTaro" href="#" target="_blank" rel="noopener">
+          <svg class="faisca" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>
+          Agendar minha leitura
+          <svg class="seta" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <figure class="taro__foto rev" data-atraso=".1">
+      <span class="taro__lua" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/><path d="M17.5 3.2 18 5l1.8.5-1.8.5-.5 1.8-.5-1.8L15.2 5l1.8-.5z"/></svg>
+      </span>
+      <img src="public/mathy/taro.webp" alt="Mathy Lemoss de olhos fechados, com as mãos em prece, sob luz violeta"
+           loading="lazy" width="646" height="1400">
+      <span class="taro__baralho" aria-hidden="true"><b></b><b></b><b></b></span>
+    </figure>
+  </div>
+
+  <div class="wrap taro__vozes">
+    <h3 class="taro__vozes-titulo rev">O que quem já sentou à mesa diz</h3>
+    <ul class="taro__depos" id="taroDepos"></ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     12 · PALAVRAS
+     ============================================================ -->
+<section class="secao palavras" aria-labelledby="palavras-titulo">
+  <div class="wrap">
+    <p class="rotulo rev" id="palavras-titulo">A Mathy que uma marca contrata</p>
+    <ul class="palavras__lista">
+      <li class="rev" style="--p:var(--rosa)">Humana</li>
+      <li class="rev" data-atraso=".06" style="--p:var(--coral)">Intensa</li>
+      <li class="rev" data-atraso=".12" style="--p:var(--amarelo)">Divertida</li>
+      <li class="rev" data-atraso=".18" style="--p:var(--turquesa)">Imprevisível</li>
+      <li class="rev" data-atraso=".24" style="--p:var(--lilas)">Profissional</li>
+    </ul>
+    <p class="palavras__fim rev" data-atraso=".3">E impossível de colocar dentro de uma única caixa</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     13 · CONTATO
+     ============================================================ -->
+<section class="secao ch-vinho contato" id="contato">
+  <img class="botanica contato__bot" src="public/graphics/horiz-esq-rosa.webp"
+       alt="" aria-hidden="true" loading="lazy" width="1400" height="467" data-parallax="14">
+
+  <div class="wrap">
+    <header class="contato__topo">
+      <p class="rotulo rev">Fala com a Mathy</p>
+      <h2 class="monumento contato__titulo rev" data-atraso=".06">Talvez você tenha chegado aqui<br>para conhecer a Mathy</h2>
+      <p class="lead rev" data-atraso=".12"><em class="emo">Espero que saia daqui lembrando um pouco de você também</em></p>
+    </header>
+
+    <div class="contato__caminhos">
+      <a class="caminho rev" data-link="waPublicidade" href="#" target="_blank" rel="noopener" style="--p:var(--rosa)">
+        <span class="caminho__num">01</span>
+        <h3 class="caminho__nome">Publicidade e projetos</h3>
+        <p class="caminho__desc">Campanhas, conteúdo patrocinado, UGC e embaixadas de marca.</p>
+        <span class="caminho__acao">WhatsApp
+          <svg class="seta" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <a class="caminho rev" data-atraso=".08" data-link="waEventos" href="#" target="_blank" rel="noopener" style="--p:var(--laranja)">
+        <span class="caminho__num">02</span>
+        <h3 class="caminho__nome">Convites e eventos</h3>
+        <p class="caminho__desc">Presença, cobertura e participação em projetos.</p>
+        <span class="caminho__acao">WhatsApp
+          <svg class="seta" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <a class="caminho rev" data-atraso=".16" data-link="waTaro" href="#" target="_blank" rel="noopener" style="--p:var(--lilas)">
+        <span class="caminho__num">03</span>
+        <h3 class="caminho__nome">Tarô terapêutico</h3>
+        <p class="caminho__desc">Atendimento individual e online, com hora marcada.</p>
+        <span class="caminho__acao">WhatsApp
+          <svg class="seta" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+    </div>
+
+    <div class="contato__redes rev" data-atraso=".24">
+      <p class="micro">Todo dia por lá</p>
+      <a class="contato__arroba" data-link="instagram" data-texto="arroba" href="#" target="_blank" rel="noopener">@mathylemoss</a>
+      <ul class="social">
+        <li><a href="#" data-link="instagram" target="_blank" rel="noopener" aria-label="Instagram de Mathy Lemoss">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a></li>
+        <li><a href="#" data-link="tiktok" target="_blank" rel="noopener" aria-label="TikTok de Mathy Lemoss">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.2a3.6 3.6 0 1 1-3-3.55"/><path d="M14 3c.4 2.4 2 4 4.4 4.2"/></svg>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     RODAPÉ
+     ============================================================ -->
+<footer class="rodape">
+  <div class="wrap rodape__grade">
+    <div class="rodape__marca">
+      <p class="rodape__nome">MATHY LEMOSS</p>
+      <p class="micro">Influenciadora digital · Atriz · Humorista · Espiritualidade</p>
+    </div>
+    <nav class="rodape__nav" aria-label="Navegação do rodapé">
+      <a href="#mathy">Mathy</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#conteudos">Conteúdos</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#taro">Tarô</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <p class="rodape__local micro" data-texto="cidade">Dom Pedro, Maranhão · Brasil</p>
+  </div>
+</footer>
+
+<script src="data/contato.js"></script>
+<script src="data/conteudo.js"></script>
+<script src="js/secoes.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

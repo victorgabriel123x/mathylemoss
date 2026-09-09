@@ -13,7 +13,7 @@ window.SITE_CONFIG = (function () {
 
   return {
     name: 'Mathy Lemoss',
-    url: 'https://victorgabriel123x.github.io/casak/',
+    url: 'https://mathylemoss.vercel.app/',
     whatsapp: WHATSAPP,
     developer: { name: 'VLDS Digital', whatsapp: '5598984772771', phone: '(98) 98477-2771' },
     waDesenvolvedor: 'https://wa.me/5598984772771?text=' + encodeURIComponent('Olá, VLDS Digital! Conheci seu trabalho pelo site da Mathy e gostaria de conversar sobre um projeto.'),
