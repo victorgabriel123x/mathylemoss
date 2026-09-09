@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "researchDate": "2026-09-09",
+  "timezone": "America/Sao_Paulo",
+  "subject": "Mathy Lemoss",
+  "scope": "Registro editorial de fontes públicas. A data de consulta não transforma dados históricos em dados atuais.",
+  "sources": [
+    {
+      "id": "tiktok-campanha-2020",
+      "title": "Começa no TikTok",
+      "publisher": "TikTok Newsroom",
+      "url": "https://newsroom.tiktok.com/comeca-no-tiktok?lang=pt-BR",
+      "publishedAt": "2020-10-22",
+      "accessedAt": "2026-09-09",
+      "type": "primary",
+      "status": "confirmed",
+      "supports": ["Mathy Lemos integrou a primeira campanha nacional do TikTok no Brasil, Começa no TikTok, em 2020.", "A campanha teve outros criadores; não afirmar exclusividade."]
+    },
+    {
+      "id": "tiktok-awards-indicacao-2021",
+      "title": "TikTok vai celebrar a criatividade de seus criadores no primeiro TikTok Awards",
+      "publisher": "TikTok Newsroom",
+      "url": "https://newsroom.tiktok.com/tiktok-awards-2021?lang=pt-BR",
+      "publishedAt": "2021-11-29",
+      "accessedAt": "2026-09-09",
+      "type": "primary",
+      "status": "confirmed",
+      "supports": ["Mathy Lemoss foi indicada a Entregou tudo na For You no TikTok Awards 2021.", "O organizador associa a artista ao perfil @mathylemoss."]
+    },
+    {
+      "id": "tiktok-awards-resultado-2021",
+      "title": "Primeira edição do TikTok Awards tem noite de celebração da criatividade e do talento de criadores da plataforma",
+      "publisher": "TikTok Newsroom",
+      "url": "https://newsroom.tiktok.com/tiktok-awards-2021-vencedores?lang=pt-BR",
+      "publishedAt": "2021-12-16",
+      "accessedAt": "2026-09-09",
+      "type": "primary",
+      "status": "confirmed",
+      "supports": ["Mathy integra os demais indicados; a vencedora da categoria foi Bárbara Coura."]
+    },
+    {
+      "id": "prime-lol-2",
+      "title": "LOL: Se Rir, Já Era! — Temporada 2",
+      "publisher": "Prime Video",
+      "url": "https://www.primevideo.com/-/pt/detail/0HGCWEAMARBZQ5IF3JRZR6CZ0Z",
+      "publishedAt": null,
+      "eventYear": 2022,
+      "accessedAt": "2026-09-09",
+      "type": "primary",
+      "status": "confirmed",
+      "supports": ["Mathy Lemos é uma das participantes da segunda temporada, de 2022.", "A descrição do terceiro episódio a associa à personagem cômica Manjuba."],
+      "limitations": ["Participação em elenco é crédito audiovisual; não é prova de campanha publicitária ou de embaixadoria com a plataforma."]
+    },
+    {
+      "id": "eh-filmes-tire5-2023",
+      "title": "Sobre — EH! Filmes",
+      "publisher": "EH! Filmes",
+      "url": "https://ehfilmes.com.br/sobre/",
+      "publishedAt": null,
+      "eventYear": 2023,
+      "accessedAt": "2026-09-09",
+      "type": "primary",
+      "status": "confirmed",
+      "supports": ["A produtora confirma Tire 5 Cartas como longa lançado em 2023, dirigido por Diego Freitas e protagonizado por Lília Cabral."]
+    },
+    {
+      "id": "exibidor-tire5-elenco",
+      "title": "Tire 5 Cartas — Ficha Técnica",
+      "publisher": "Exibidor",
+      "url": "https://www.exibidor.com.br/filme/15488/tire-5-cartas.html",
+      "publishedAt": null,
+      "eventYear": 2023,
+      "accessedAt": "2026-09-09",
+      "type": "industry_press",
+      "status": "confirmed",
+      "supports": ["Mathy Lemos integra o elenco de Tire 5 Cartas."],
+      "limitations": ["Não identifica o nome de sua personagem.", "Datas de estreia em setembro divergem entre fontes; usar somente 2023 no site."]
+    },
+    {
+      "id": "papodecinema-tire5-elenco",
+      "title": "Tire 5 Cartas — Detalhes",
+      "publisher": "Papo de Cinema",
+      "url": "https://www.papodecinema.com.br/filmes/tire-5-cartas/detalhes/",
+      "publishedAt": null,
+      "eventYear": 2023,
+      "accessedAt": "2026-09-09",
+      "type": "specialist_press",
+      "status": "confirmed",
+      "supports": ["A ficha de 2023 lista Mathy Lemos entre as pessoas do elenco."]
+    },
+    {
+      "id": "imdb-biografia",
+      "title": "Mathy Lemos — Biography",
+      "publisher": "IMDb",
+      "url": "https://www.imdb.com/name/nm14197302/bio/",
+      "publishedAt": null,
+      "accessedAt": "2026-09-09",
+      "type": "public_self_report",
+      "status": "self_reported",
+      "supports": ["A biografia atribui o início do Programa Xibel a 2014.", "Lista parcerias com Burger King, Bradesco, Americanas, Salon Line e Mercado Livre."],
+      "limitations": ["O crédito da mini biografia é Mathy Lemos. É relato público, sem comprovação independente das campanhas específicas.", "A contagem de seguidores não tem data e não pode ser tratada como atual."]
+    },
+    {
+      "id": "promoview-female-2023",
+      "title": "Black Princess lança nova edição de cerveja fabricada por mulheres",
+      "publisher": "Promoview",
+      "url": "https://www.promoview.com.br/experiencia-de-marca/black-princess-nova-edicao-cerveja-fabricada-mulheres/",
+      "publishedAt": "2023-03-11",
+      "accessedAt": "2026-09-09",
+      "type": "industry_press",
+      "status": "confirmed",
+      "supports": ["Mathy Lemos está entre os nomes anunciados para a ação Black Princess FemAle, com a hashtag #StrongFemAle, em 2023.", "O nome Mathy Lemos contém um link direto para instagram.com/mathylemoss/."],
+      "limitations": ["A notícia confirma o anúncio da participação; não traz resultados comerciais ou métricas da ação."]
+    },
+    {
+      "id": "midianews-origem-2022",
+      "title": "Conheça a maranhense cuiabana que bomba no TikTok e Insta",
+      "publisher": "MidiaNews",
+      "url": "https://www.midianews.com.br/cotidiano/conheca-a-maranhense-cuiabana-que-bomba-no-tiktok-e-insta/422288",
+      "publishedAt": "2022-05-22",
+      "accessedAt": "2026-09-09",
+      "type": "interview",
+      "status": "confirmed",
+      "supports": ["Mathy é natural de Dom Pedro, Maranhão.", "A entrevista documenta seu trabalho de humor e dublagem."],
+      "limitations": ["Residência e contagens citadas na entrevista são de 2022, não de 2026."]
+    },
+    {
+      "id": "olhardireto-entrevista-2022",
+      "title": "Foi difícil para eu me amar — entrevista com Mathy Lemos",
+      "publisher": "Olhar Direto",
+      "url": "https://www.olhardireto.com.br/conceito/noticias/foi-dificil-para-eu-me-amar-quem-e-a-influenciadora-com-quase-3-milhoes-de-seguidores-que-escolheu-viver-em-cuiaba?edicao=3",
+      "publishedAt": "2022-05-04",
+      "accessedAt": "2026-09-09",
+      "type": "interview",
+      "status": "confirmed",
+      "supports": ["Mathy fala publicamente de sua identidade como mulher trans e da relação com o humor.", "A matéria incorpora publicação do Instagram identificado como Mathy Lemoss @mathylemoss."],
+      "limitations": ["Contagens e local de residência têm referência em 2022. Não publicar como atuais."]
+    }
+  ],
+  "socialProfiles": [
+    {
+      "platform": "Instagram",
+      "handle": "@mathylemoss",
+      "url": "https://www.instagram.com/mathylemoss/",
+      "status": "corroborated_by_direct_editorial_link",
+      "sourceIds": ["promoview-female-2023", "olhardireto-entrevista-2022"],
+      "checkedAt": "2026-09-09",
+      "directAccess": "fetch_error",
+      "followers": null,
+      "metricsDate": null,
+      "limitation": "Perfil já utilizado no projeto e corroborado por links de imprensa. Não foi possível ler métricas oficiais ao vivo."
+    },
+    {
+      "platform": "TikTok",
+      "handle": "@mathylemoss",
+      "url": "https://www.tiktok.com/@mathylemoss",
+      "status": "confirmed_by_platform_historical_record",
+      "sourceIds": ["tiktok-awards-indicacao-2021"],
+      "checkedAt": "2026-09-09",
+      "directAccess": "empty_content_or_robots_restriction",
+      "followers": null,
+      "likes": null,
+      "metricsDate": null,
+      "limitation": "A própria plataforma associa o perfil à artista, mas o acesso disponível não expôs contagens atuais."
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@mathylemoss",
+      "url": "https://www.youtube.com/@mathylemoss",
+      "status": "candidate_not_authenticated",
+      "sourceIds": [],
+      "checkedAt": "2026-09-09",
+      "directAccess": "title_only",
+      "subscribers": null,
+      "metricsDate": null,
+      "limitation": "A URL respondeu com o título Mathy Lemoss - YouTube e apenas rodapé genérico. Não basta para autenticar a titularidade ou indicar que o canal está ativo. Não apresentar como oficial sem validação adicional."
+    }
+  ],
+  "brands": [
+    { "name": "TikTok", "status": "confirmed_primary", "sourceIds": ["tiktok-campanha-2020"], "context": "Campanha Começa no TikTok, 2020" },
+    { "name": "Prime Video", "status": "confirmed_audiovisual_credit", "sourceIds": ["prime-lol-2"], "context": "Elenco de LOL, temporada 2, 2022; não inferir publicidade" },
+    { "name": "Black Princess", "status": "confirmed_press_announcement", "sourceIds": ["promoview-female-2023"], "context": "Ação FemAle #StrongFemAle, 2023" },
+    { "name": "Bradesco", "status": "public_self_report", "sourceIds": ["imdb-biografia"] },
+    { "name": "Burger King", "status": "public_self_report", "sourceIds": ["imdb-biografia"] },
+    { "name": "Americanas", "status": "public_self_report", "sourceIds": ["imdb-biografia"] },
+    { "name": "Salon Line", "status": "public_self_report", "sourceIds": ["imdb-biografia"] },
+    { "name": "Mercado Livre", "status": "public_self_report", "sourceIds": ["imdb-biografia"] },
+    { "name": "Spotify", "status": "provided_in_project_not_independently_verified", "sourceIds": [] },
+    { "name": "Magazine Luiza", "status": "provided_in_project_not_independently_verified", "sourceIds": [] },
+    { "name": "Claro", "status": "provided_in_project_not_independently_verified", "sourceIds": [] },
+    { "name": "Nissin", "status": "provided_in_project_not_independently_verified", "sourceIds": [] }
+  ],
+  "editorialRules": [
+    "Não preencher contagens com estimativas, agregadores ou números históricos.",
+    "Não somar seguidores de plataformas e chamar o resultado de pessoas únicas.",
+    "Usar indicada no TikTok Awards 2021; não vencedora.",
+    "Usar uma das criadoras da primeira campanha nacional; não a primeira ou única influenciadora.",
+    "Usar atriz do elenco de Tire 5 Cartas, 2023, sem inventar nome de personagem.",
+    "Manter o nome editorial Mathy Lemoss; Mathy Lemos aparece nos créditos e fontes antigas.",
+    "Fonte pública não implica licença para reutilizar fotos, frames, logotipos ou vídeos."
+  ]
+}

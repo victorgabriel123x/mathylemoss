@@ -1,0 +1,278 @@
+/* ============================================================
+   MATHY LEMOSS — COMPONENTES
+   Botões, pills, ícones, header, menu
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   BOTÕES
+   ------------------------------------------------------------ */
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.75em;
+  padding:.95em 1.65em;
+  border-radius:var(--radius-pill);
+  font-family:var(--ui);
+  font-size:var(--fs-small);
+  font-weight:700;
+  letter-spacing:.06em;
+  line-height:1;
+  position:relative;
+  isolation:isolate;
+  transition:transform var(--t-med) var(--e-out),
+             box-shadow var(--t-med) var(--e-soft),
+             border-color var(--t-med) var(--e-soft),
+             color var(--t-med) var(--e-soft);
+  min-height:48px;
+}
+.btn .seta{
+  transition:transform var(--t-med) var(--e-out);
+  flex:none;
+}
+.btn:hover .seta,.btn:focus-visible .seta{transform:translateX(5px)}
+.btn .faisca{flex:none;opacity:.9}
+
+/* primário — gradiente rosa → laranja */
+.btn--primario{
+  color:#1A0E1B;
+  background:linear-gradient(100deg,var(--rosa) 0%,var(--coral) 55%,var(--laranja) 100%);
+  box-shadow:0 0 0 0 rgba(255,111,174,.5);
+}
+.btn--primario:hover,.btn--primario:focus-visible{
+  transform:translateY(-2px);
+  box-shadow:0 10px 34px -10px rgba(255,111,174,.62);
+}
+
+/* secundário — vazado dourado */
+.btn--secundario{
+  color:var(--ch-fg);
+  border:1px solid var(--dourado);
+  background:transparent;
+}
+.btn--secundario:hover,.btn--secundario:focus-visible{
+  border-color:var(--dourado-claro);
+  box-shadow:inset 0 0 0 1px rgba(227,200,148,.35),0 0 26px -12px rgba(227,200,148,.8);
+  transform:translateY(-2px);
+}
+
+/* terciário — vazado magenta */
+.btn--terciario{
+  color:var(--ch-fg);
+  border:1px solid var(--ch-accent);
+  background:transparent;
+}
+.btn--terciario:hover,.btn--terciario:focus-visible{
+  background:color-mix(in srgb,var(--ch-accent) 12%,transparent);
+  transform:translateY(-2px);
+}
+
+/* texto com fio */
+.btn--fio{
+  padding:.5em 0;
+  border-radius:0;
+  border-bottom:1px solid var(--ch-line);
+  color:var(--ch-fg);
+}
+.btn--fio:hover,.btn--fio:focus-visible{border-bottom-color:var(--ch-accent)}
+
+.btns{display:flex;flex-wrap:wrap;gap:.85rem}
+
+/* ------------------------------------------------------------
+   PILL TAG
+   ------------------------------------------------------------ */
+
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:.55em;
+  padding:.55em 1.05em;
+  border-radius:var(--radius-pill);
+  border:1px solid currentColor;
+  font-size:var(--fs-micro);
+  font-weight:700;
+  letter-spacing:var(--tr-mid);
+  text-transform:uppercase;
+  color:var(--ch-accent);
+  transition:background-color var(--t-med) var(--e-soft),
+             color var(--t-med) var(--e-soft),
+             transform var(--t-med) var(--e-out);
+}
+.pill:hover,.pill:focus-visible{transform:translateY(-2px)}
+.pill[aria-selected="true"],.pill.ativa{
+  background:var(--ch-accent);
+  color:var(--ch-bg);
+}
+
+/* ------------------------------------------------------------
+   ÍCONES SOCIAIS
+   ------------------------------------------------------------ */
+
+.social{display:flex;gap:.6rem}
+.social a{
+  width:42px;height:42px;
+  display:grid;place-items:center;
+  border:1px solid var(--dourado);
+  border-radius:50%;
+  color:var(--dourado-claro);
+  transition:color var(--t-med) var(--e-soft),
+             border-color var(--t-med) var(--e-soft),
+             transform var(--t-med) var(--e-out);
+}
+.social a:hover,.social a:focus-visible{
+  color:var(--ch-fg);
+  border-color:var(--ch-fg);
+  transform:translateY(-3px);
+}
+
+/* ------------------------------------------------------------
+   HEADER
+   ------------------------------------------------------------ */
+
+.topo{
+  position:fixed;
+  inset:0 0 auto 0;
+  z-index:60;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:1.05rem var(--gutter);
+  color:var(--creme);
+  transition:background-color var(--t-med) var(--e-soft),
+             backdrop-filter var(--t-med) var(--e-soft),
+             padding var(--t-med) var(--e-soft),
+             border-color var(--t-med) var(--e-soft);
+  border-bottom:1px solid transparent;
+}
+.topo.compacto{
+  background:rgba(18,10,19,.78);
+  backdrop-filter:blur(14px);
+  border-bottom-color:rgba(247,239,230,.1);
+  padding-block:.7rem;
+}
+
+.marca{display:flex;flex-direction:column;line-height:1;gap:.28rem}
+.marca__nome{
+  font-family:var(--display);
+  font-size:clamp(.95rem,1.5vw,1.15rem);
+  letter-spacing:.16em;
+  font-weight:500;
+}
+.marca__papel{
+  font-size:.58rem;
+  letter-spacing:.3em;
+  font-weight:700;
+  color:var(--rosa);
+  text-transform:uppercase;
+}
+
+.topo__nav{display:none;gap:1.6rem;align-items:center}
+.topo__nav a{
+  font-size:var(--fs-micro);
+  font-weight:600;
+  letter-spacing:var(--tr-mid);
+  text-transform:uppercase;
+  color:rgba(247,239,230,.78);
+  position:relative;
+  padding-block:.4rem;
+  transition:color var(--t-fast) var(--e-soft);
+}
+.topo__nav a::after{
+  content:"";position:absolute;left:0;bottom:0;
+  width:100%;height:1px;background:var(--rosa);
+  transform:scaleX(0);transform-origin:right;
+  transition:transform var(--t-med) var(--e-out);
+}
+.topo__nav a:hover,.topo__nav a:focus-visible{color:var(--creme)}
+.topo__nav a:hover::after,.topo__nav a:focus-visible::after{transform:scaleX(1);transform-origin:left}
+
+.topo__dir{display:flex;align-items:center;gap:.85rem}
+
+/* hambúrguer de três fios dourados */
+.menu-btn{
+  width:46px;height:46px;
+  display:grid;place-items:center;
+  border:1px solid var(--dourado);
+  border-radius:50%;
+  flex:none;
+}
+.menu-btn span{display:block;width:17px;height:1.5px;background:var(--dourado-claro);margin:2.5px 0;transition:transform var(--t-med) var(--e-out),opacity var(--t-fast)}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(4px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-4px) rotate(-45deg)}
+
+/* ------------------------------------------------------------
+   MENU OVERLAY
+   ------------------------------------------------------------ */
+
+.menu{
+  position:fixed;inset:0;z-index:55;
+  background:var(--ameixa-900);
+  display:grid;
+  grid-template-rows:1fr auto;
+  padding:clamp(6rem,14vh,9rem) var(--gutter) clamp(2rem,5vh,3.5rem);
+  opacity:0;visibility:hidden;
+  transition:opacity var(--t-med) var(--e-soft),visibility var(--t-med);
+}
+.menu[data-aberto="true"]{opacity:1;visibility:visible}
+.menu__lista{display:flex;flex-direction:column;justify-content:center;gap:.15em}
+.menu__lista a{
+  font-family:var(--display);
+  font-size:clamp(2.2rem,8vw,5rem);
+  line-height:1.06;
+  color:var(--creme);
+  display:inline-flex;
+  align-items:baseline;
+  gap:.6rem;
+  transition:color var(--t-med) var(--e-soft),transform var(--t-med) var(--e-out);
+  width:fit-content;
+}
+.menu__lista a span{
+  font-family:var(--ui);
+  font-size:.62rem;
+  letter-spacing:.24em;
+  color:var(--dourado);
+  font-weight:700;
+}
+.menu__lista a:hover,.menu__lista a:focus-visible{color:var(--rosa);transform:translateX(12px)}
+.menu__rodape{
+  display:flex;flex-wrap:wrap;gap:1.2rem;
+  align-items:center;justify-content:space-between;
+  border-top:1px solid rgba(247,239,230,.14);
+  padding-top:1.4rem;
+}
+.menu__rodape p{font-size:var(--fs-micro);letter-spacing:var(--tr-mid);text-transform:uppercase;color:rgba(247,239,230,.5)}
+
+@media (min-width:1080px){
+  .topo__nav{display:flex}
+  .menu-btn{display:none}
+}
+
+/* ------------------------------------------------------------
+   FAIXA / MARQUEE
+   ------------------------------------------------------------ */
+
+.faixa{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  width:100%;
+  user-select:none;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+.faixa__trilho{
+  display:flex;
+  flex:none;
+  align-items:center;
+  gap:clamp(1.6rem,4vw,3.6rem);
+  padding-right:clamp(1.6rem,4vw,3.6rem);
+  animation:desliza 46s linear infinite;
+}
+.faixa:hover .faixa__trilho{animation-play-state:paused}
+@keyframes desliza{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){
+  .faixa__trilho{animation:none}
+  .faixa{overflow-x:auto;-webkit-mask-image:none;mask-image:none}
+}
